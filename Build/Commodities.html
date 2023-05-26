@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commodities</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js"></script>
+  </head>
+  <body class="font-serif">
+    <div class="h-1/2 bg-gradient-to-t from-indigo-400 lg:h-screen">
+      <!-- navbar -->
+      <nav class="fixed top-0 w-full bg-white dark:bg-white">
+        <div class="container mx-auto flex items-center justify-between py-5">
+          <div class="flex items-center gap-2">
+            <img class="w-1/12" src="./img/logo.jpeg" alt="Logo Image" />
+            <span class="text-2xl font-bold text-indigo-700"
+              >Pilakan Enterprise</span
+            >
+          </div>
+          <ul class="hidden flex-nowrap space-x-10 md:flex">
+            <li>
+              <a
+                href="./index.html"
+                class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./About.html"
+                class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="./Commodities.html"
+                class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                >Commodities</a
+              >
+            </li>
+            <li>
+              <a
+                href="./ContactUs.html"
+                class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="./JoinUs.html"
+                class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                >Join Us</a
+              >
+            </li>
+          </ul>
+          <div>
+            <button
+              id="hamburger-button"
+              class="cursor-pointer space-y-1 text-3xl md:hidden"
+            >
+              &#9776;
+            </button>
+          </div>
+          <ul
+            id="mobile-menu"
+            class="absolute left-0 top-0 hidden w-full flex-col space-y-10 rounded-b-3xl bg-indigo-900 p-10 text-center text-white dark:text-white"
+          >
+            <button class="self-end px-6 text-6xl">&times;</button>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./About.html">About Us</a>
+            </li>
+            <li>
+              <a href="./Commodities.html">Commodities</a>
+            </li>
+            <li>
+              <a href="./ContactUs.html">Contact Us</a>
+            </li>
+            <li>
+              <a href="./JoinUs.html">Join Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- services -->
+      <section
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
+        >
+          OUR SERVICES
+        </h2>
+        <h2 class="items-center font-bold text-indigo-600">What do we offer?</h2>
+        <p class="w-1/2 items-center text-center text-gray-400">
+          Our company bases on selling agricultural goods by supplying farmers
+          with a ready for their commodities hence enables a sustainable flow of
+          goods and services from the producers to the consumers.
+        </p>
+        <ul
+          class="item-center mx-auto my-12 list-none flex-row flex gap-8 sm:flex-row"
+        >
+          <li
+            class="flex w-2/3 flex-col items-center rounded-3xl border-solid border-slate-900 bg-white px-2 py-6 shadow-xl dark:border-gray-100 dark:bg-black"
+          >
+            <img
+              src="./img/tomasz-filipek-joOVC9d-jis-unsplash.jpg"
+              alt="Wheat"
+              class="mb-6 w-1/2"
+            />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Wheat and its related products.
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              A widely used crop that produces flour which can be used in a
+              variety of functions:Baking.
+            </p>
+          </li>
+          <li
+            class="flex w-2/3 flex-col items-center rounded-3xl border-solid border-slate-900 bg-white px-2 py-6 shadow-xl dark:border-gray-100 dark:bg-black"
+          >
+            <img
+              src="./img/markus-spiske-Yy-dHQP-Ax0-unsplash.jpg"
+              alt="Finder"
+              class="mb-6 w-1/2"
+            />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Spinach a medicinal herb.
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              Used in a variety of salards
+            </p>
+          </li>
+          <li
+            class="flex w-2/3 flex-col items-center rounded-3xl border-solid border-slate-900 bg-white px-2 py-6 shadow-xl dark:border-gray-100 dark:bg-black"
+          >
+            <img
+              src="./img/gil-ndjouwou-cueV_oTVsic-unsplash.jpg"
+              alt="Avocados"
+              class="mb-6 w-1/2"
+            />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Avocados a healthy fruit.
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              Avacados are know throughout the world as a healthy fat food and
+              is used in the preparation of countless dishes:Guacamoli.
+            </p>
+          </li>
+          <li
+            class="flex w-2/3 flex-col items-center rounded-3xl border-solid border-slate-900 bg-white px-2 py-6 shadow-xl dark:border-gray-100 dark:bg-black"
+          >
+            <img
+              src="./img/natasha-skov-ujh4hU9S-KA-unsplash.jpg"
+              alt="Finder"
+              class="mb-6 w-1/2"
+            />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Cabbages comes with different colors :purple or green.
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              Used in a variety of salards
+            </p>
+          </li>
+          <li
+            class="flex w-2/3 flex-col items-center rounded-3xl border-solid border-slate-900 bg-white px-2 py-6 shadow-xl dark:border-gray-100 dark:bg-black"
+          >
+            <img
+              src="./img/wouter-supardi-salari-HE_MjmWh9eQ-unsplash.jpg"
+              alt="Finder"
+              class="mb-6 w-1/2"
+            />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Corn a staple food for most countries.
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              A widely used crop that produces flour which can be used in a
+              variety of dishes.
+            </p>
+          </li>
+          <li
+            class="flex w-2/3 flex-col items-center rounded-3xl border-solid border-slate-900 bg-white px-2 py-6 shadow-xl dark:border-gray-100 dark:bg-black"
+          >
+            <img
+              src="./img/petr-magera-YLeRHRiRgts-unsplash.jpg"
+              alt="Finder"
+              class="mb-6 w-1/2"
+            />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Lettuce a salard speciality.
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              Used in a variety of salards
+            </p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <footer id="footer" class="bg-teal-700 text-xl text-white">
+      <section
+        class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>Pilakan Enterprise Products,Inc.</h2>
+          354 Othaya Way<br />
+          Kenya, Nairobi 12324-342323 <br />
+          Email: <a href="trm@AchmeRockets.com">pkorirdarius@gmail.com</a><br />
+          Phone: <a href="tel:+2540737322606"> (342) 445-6464</a>
+        </address>
+        <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
+          <a href="./index.html" class="opacity-90">Home</a>
+          <a href="./About.html" class="opacity-90">About Us</a>
+          <a href="./ContactUs.html" class="opacity-90">Contact Us:</a>
+          <a href="./JoinUs.html" class="opacity-90">Join Us</a>
+          <a href="./Commodities.html" class="opacity-90">Commodities</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year">2023</span></p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

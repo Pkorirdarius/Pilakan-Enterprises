@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div class="h-1/2 bg-gradient-to-t from-blue-800 lg:h-screen">
+        <!-- navbar -->
+        <nav class="fixed top-0 w-full bg-white dark:bg-white">
+          <div class="container mx-auto flex items-center justify-between py-5">
+            <div class="flex items-center gap-2">
+              <img class="w-1/12" src="./img/logo.jpeg" alt="Logo Image" />
+              <span class="text-2xl font-bold text-indigo-700"
+                >Pilakan Enterprise</span
+              >
+            </div>
+            <ul class="hidden flex-nowrap space-x-10 md:flex">
+              <li>
+                <a
+                  href="./index.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./About.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./Commodities.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >Commodities</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ContactUs.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./JoinUs.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >Join Us</a
+                >
+              </li>
+            </ul>
+            <div>
+              <button
+                id="hamburger-button"
+                class="cursor-pointer space-y-1 text-3xl md:hidden"
+              >
+                &#9776;
+              </button>
+            </div>
+            <ul
+              id="mobile-menu"
+              class="absolute left-0 top-0 hidden w-full flex-col space-y-10 rounded-b-3xl bg-indigo-900 p-10 text-center text-white dark:text-white"
+            >
+              <button class="self-end px-6 text-6xl">&times;</button>
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./About.html">About Us</a>
+              </li>
+              <li>
+                <a href="./Commodities.html">Commodities</a>
+              </li>
+              <li>
+                <a href="./ContactUs.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="./JoinUs.html">Join Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main class="mx-auto max-w-4xl">
+          <!-- Hero section -->
+          <section
+            id="hero"
+            class="widescreen:section-min-height tallscreen:section-min-height mb-12 mt-16 flex flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
+          >
+            <article class="sm:w-1/2">
+              <h2
+                class="max-w-md text-center mb-6 mt-6 text-6xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl"
+              >
+                We live to serve
+                <span class="text-indigo-700 dark:text-indigo-300"
+                  >and provide </span
+                >for all those in need
+              </h2>
+              <p
+                class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
+              >
+                We are aiming to reachout to the needy communities everywhere  and to feed
+                the multitude of people...
+              </p>
+              <p
+                class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
+              >
+                Think Pilakan Enterprises.
+              </p>
+            </article>
+            <img class="w-1/2" src="./img/wouter-supardi-salari-HE_MjmWh9eQ-unsplash.jpg" alt="Rocket Dab" />
+          </section>
+          <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+    </div>
+    <!-- Testimonies -->
+    <section
+        id="testimonials"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
+        >
+          Testimonials.
+        </h2>
+        <figure class="my-12">
+          <blockquote
+            class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
+          >
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:left-0 before:top-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
+            >
+              Pilakan Enterprises has always been there for me. Their food packages arrived
+              in an Amazon box as expected. Life-long customers! A++ shopping
+              experience.
+              <figcaption
+                class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
+              >
+                &#8212;Wile E. Coyote
+              </figcaption>
+            </p>
+          </blockquote>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
+          >
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:left-0 before:top-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
+            >
+              I knew i not only wanted &#8212;
+              <span class="italic">I needed</span> &#8212;Pilakan Enterprises packages
+              for my mission in North-Kenya.Pilakan Enterprises delivered in one day!Nothing
+              says <q class="italic">we serve</q>like Pilakan Enterprise Packages
+              👌.
+              <figcaption
+                class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
+              >
+                &#8212;Thanos
+              </figcaption>
+            </p>
+          </blockquote>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
+          >
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:left-0 before:top-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
+            >
+              The Pilaka Enterprise support ensures that customers recieve the
+              <span class="italic">Best of products,Top notch Quality!</span
+              >Nevertheless the company always delivers.
+              <figcaption
+                class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
+              >
+                &#8212;Martin Luther.
+              </figcaption>
+            </p>
+          </blockquote>
+        </figure>
+      </section>
+</body>
+</html>

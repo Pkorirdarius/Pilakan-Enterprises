@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="h-1/2 bg-gradient-to-t from-blue-800 lg:h-screen">
+        <!-- navbar -->
+        <nav class="fixed top-0 w-full bg-white dark:bg-white">
+          <div class="container mx-auto flex items-center justify-between py-5">
+            <div class="flex items-center gap-2">
+              <img class="w-1/12" src="./img/logo.jpeg" alt="Logo Image" />
+              <span class="text-2xl font-bold text-indigo-700"
+                >Pilakan Enterprise</span
+              >
+            </div>
+            <ul class="hidden flex-nowrap space-x-10 md:flex">
+              <li>
+                <a
+                  href="./index.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./About.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./Commodities.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >Commodities</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ContactUs.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./JoinUs.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >Join Us</a
+                >
+              </li>
+            </ul>
+            <div>
+              <button
+                id="hamburger-button"
+                class="cursor-pointer space-y-1 text-3xl md:hidden"
+              >
+                &#9776;
+              </button>
+            </div>
+            <ul
+              id="mobile-menu"
+              class="absolute left-0 top-0 hidden w-full flex-col space-y-10 rounded-b-3xl bg-indigo-900 p-10 text-center text-white dark:text-white"
+            >
+              <button class="self-end px-6 text-6xl">&times;</button>
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./About.html">About Us</a>
+              </li>
+              <li>
+                <a href="./Commodities.html">Commodities</a>
+              </li>
+              <li>
+                <a href="./ContactUs.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="./JoinUs.html">Join Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+<!--  -->
+    <section
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 p-6"
+        >
+        <h2
+            class="mb-6 text-center text-4xl font-bold text-indigo-700 dark:text-white sm:text-5xl"
+        >
+       Join Us:
+        </h2>
+    </section>
+    <!-- Form Join us -->
+    <div>
+        <div>
+            <form action="" class="mx-auto flex max-w-4xl flex-col items-start text-2xl sm:text-3xl">
+                <label for="firstname">First Name: </label>
+                <input type="text" placeholder="Enter your first Name" required class="rounded-xl pl-2">
+                <label for="secondname">Second Name: </label>
+                <input type="text" placeholder="Enter your Second Name" required class="rounded-xl pl-3 ">
+                <label for="email">Email</label>
+                <input type="email" name="Email"id="email" required minlength="3" maxlength="60"placeholder="Your Email"
+                  class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl">
+                <label for="Telephone No:">Telephone No</label>
+                <input type="tel" name="Telaphone" id="phonenumber" required placeholder="Enter your phone number?" class="rounded-xl pl-3 ">
+                <label for="Location">Location</label>
+                <input type="text" placeholder="Enter your location" required class="rounded-xl pl-3 ">
+                <button
+                  class="mt-7 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none"
+                >
+                  Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer id="footer" class="bg-teal-700 text-xl text-white">
+  <section
+    class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between"
+  >
+    <address>
+      <h2>Pilakan Enterprise Products,Inc.</h2>
+      354 Othaya Way<br />
+      Kenya, Nairobi 12324-342323 <br />
+      Email: <a href="trm@AchmeRockets.com">pkorirdarius@gmail.com</a><br />
+      Phone: <a href="tel:+2540737322606"> (342) 445-6464</a>
+    </address>
+    <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
+      <a href="./index.html" class="opacity-90">Home</a>
+      <a href="./About.html" class="opacity-90">About Us</a>
+      <a href="./ContactUs.html" class="opacity-90">Contact Us:</a>
+      <a href="./JoinUs.html" class="opacity-90">Join Us</a>
+      <a href="./Commodities.html" class="opacity-90">Commodities</a>
+    </nav>
+    <div class="flex flex-col sm:gap-2">
+      <p class="text-right">Copyright &copy; <span id="year">2023</span></p>
+      <p class="text-right">All Rights Reserved</p>
+    </div>
+  </section>
+</footer>
+</body>
+</html>

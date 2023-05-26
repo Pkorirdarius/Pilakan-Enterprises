@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+</head>
+<body class="font-serif">
+     <!-- Into section -->
+     <section class="h-1/2 bg-gradient-to-t from-indigo-400 lg:h-screen">
+        <!-- navbar -->
+        <nav class="fixed top-0 w-full bg-white dark:bg-white">
+          <div class="container mx-auto flex items-center justify-between py-5">
+            <div class="flex items-center gap-2">
+              <img class="w-1/12" src="./img/logo.jpeg" alt="Logo Image" />
+              <span class="text-2xl font-bold text-indigo-700"
+                >Pilakan Enterprise</span
+              >
+            </div>
+            <ul class="hidden flex-nowrap space-x-10 md:flex">
+              <li>
+                <a
+                  href="./index.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./About.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./Commodities.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >Commodities</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ContactUs.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./JoinUs.html"
+                  class="text-gray-500 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+                  >Join Us</a
+                >
+              </li>
+            </ul>
+            <div>
+              <button
+                id="hamburger-button"
+                class="cursor-pointer space-y-1 text-3xl md:hidden"
+              >
+                &#9776;
+              </button>
+            </div>
+            <ul
+              id="mobile-menu"
+              class="absolute left-0 top-0 hidden w-full flex-col space-y-10 rounded-b-3xl bg-indigo-900 p-10 text-center text-white dark:text-white"
+            >
+              <button class="self-end px-6 text-6xl">&times;</button>
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./About.html">About Us</a>
+              </li>
+              <li>
+                <a href="./Commodities.html">Commodities</a>
+              </li>
+              <li>
+                <a href="./ContactUs.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="./JoinUs.html">Join Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+     </section>
+    <div class="absolute bottom-0 right-0 lg:left-0 h-5/6 w-fill object-cover">
+        <div id="map" style="height: 600px; width: 100%;"></div>
+      </div>
+      <script>
+        function initMap() {
+          var USAIDLocation = { lat: -1.2920659, lng: 36.8219462 };
+          var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 16,
+            center: USAIDLocation,
+          });
+          var marker = new google.maps.Marker({
+            position: USAIDLocation,
+            map: map,
+          });
+        }
+      </script>
+      <script
+        async
+        defer
+        src="https://maps.google.com/maps/api/js?callback=initMap"
+      ></script>
+      <br><br>
+      <section
+        id="hero"
+        class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="mx-auto text-center text-6xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl"
+          >
+            We can be found at
+            <span class="text-indigo-700 dark:text-indigo-300"
+              >the location marked on the map above, </span
+            >you may visit us during morning hours from 6.00am to 7.00pm.
+          </h2>
+        </article>
+      </section>
+      <!-- Contact us section -->
+        <section
+        id="contact"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
+        >
+           Have a Question?
+        </h2>
+        <form
+          action=""
+          class="mx-auto flex max-w-4xl flex-col items-start text-2xl sm:text-3xl"
+        >
+          <label for="email">Email</label>
+          <input type="email" 
+            name="Email"
+            id="email" 
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your Email"
+            class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl">
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your subject"
+            class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"
+          />
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+            required
+            class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"
+          >
+          </textarea>
+          <button
+            class="mt-7 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer" class="bg-teal-700 text-xl text-white">
+      <section
+        class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>Pilakan Enterprise Products,Inc.</h2>
+          354 Othaya Way<br />
+          Kenya, Nairobi 12324-342323 <br />
+          Email: <a href="trm@AchmeRockets.com">pkorirdarius@gmail.com</a><br />
+          Phone: <a href="tel:+2540737322606"> (342) 445-6464</a>
+        </address>
+        <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
+          <a href="./index.html" class="opacity-90">Home</a>
+          <a href="./About.html" class="opacity-90">About Us</a>
+          <a href="./ContactUs.html" class="opacity-90">Contact Us:</a>
+          <a href="./JoinUs.html" class="opacity-90">Join Us</a>
+          <a href="./Commodities.html" class="opacity-90">Commodities</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year">2023</span></p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+</body>
+</html>
